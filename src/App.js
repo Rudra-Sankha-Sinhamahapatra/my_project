@@ -39,7 +39,11 @@ const recipies =[
 
 ]
 
-
+const recipeObjects= recipies.map((recipe,recipe_id) =>( {
+  id:recipe_id,
+  title: recipe,
+}));
+ console.log(recipeObjects);
 
 function App() {
   return (
